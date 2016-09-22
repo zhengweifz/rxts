@@ -12,8 +12,8 @@ export class contentConsumer {
 
     }
 
-    logData () {
-        this.myProvider.content.subscribe(content => console.log(content));
+    logData (op: string) {
+        this.myProvider.getContentByOps(op).subscribe(content => console.log(content));
     }
 
 }
